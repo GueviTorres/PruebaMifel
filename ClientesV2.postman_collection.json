@@ -108,6 +108,70 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "buscarPokemon",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/pokemon/pikachu",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"pokemon",
+						"pikachu"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "encriptar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/encriptar/estoesunejemplo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"encriptar",
+						"estoesunejemplo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "desencriptar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/desencriptar/estoesunejemplo/TTdXQnWrxCnWkSIrjrqd9A==",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"desencriptar",
+						"estoesunejemplo",
+						"TTdXQnWrxCnWkSIrjrqd9A=="
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
