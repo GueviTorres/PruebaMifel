@@ -1,0 +1,113 @@
+{
+	"info": {
+		"_postman_id": "5eeb7282-cc2c-457e-b7f8-cf466b337793",
+		"name": "Clientes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19561597"
+	},
+	"item": [
+		{
+			"name": "token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "angularapp",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "andres",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/oauth/token",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"oauth",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getClientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getClienteById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbmZvX2FkaWNpb25hbCI6IkhvbGEgcXVlIHRhbCE6IGFuZHJlcyIsInVzZXJfbmFtZSI6ImFuZHJlcyIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhcGVsbGlkbyI6Ikd1em1hbiIsImV4cCI6MTY3NzYyNzA4Nywibm9tYnJlIjoiQW5kcmVzIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6IjI2MWU4NThiLTFlYjItNDc1MS1iMWM0LTU3NGJiZmMxNjUyZiIsImVtYWlsIjoicHJvZmVzb3JAYm9sc2FkZWlkZWFzLmNvbSIsImNsaWVudF9pZCI6ImFuZ3VsYXJhcHAifQ.DKlv0_XZuWYFTLbs_K4OvuPe5R-ih-HdnvA1S6sCZwn90hxN4crQpkaXrYiw2FKOeQ6lR74Ojg2owkYjy5GdWwveo1Tf9hTkrxs3anEwGCfxAtT9pQsVep1-_WLxBK7_-R-d9wEoPZJxyMZ37dwdlS983EVWD1NHFMcWgtYGmN6AcaMeWrmq8g_S1OLlEgSKr1rNTRDxpk02nA1L3ArjDSHBQVuY3VgOPhN1ahQppkv9Yw-YqW38eHtl-RZsr-As-vP2Wrd2p-VtpB-fONpS9VkcLw3ntkoW7WK7O02K8mIkKa7ew5yY8jTK10dJT0Uk3iMm6o7FlgcqYmMp8UhkQA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/clientes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"clientes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
