@@ -16,6 +16,8 @@ public interface IClienteService {
 	
 	public Cliente findById(Long id);
 	
+	public Cliente findByName(String nombre);
+	
 	public Cliente save(Cliente cliente);
 	
 	public void delete(Long id);

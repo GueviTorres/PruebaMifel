@@ -35,6 +35,12 @@ public class ClienteServiceImpl implements IClienteService {
 	public Cliente findById(Long id) {
 		return clienteDao.findById(id).orElse(null);
 	}
+	
+	@Override
+	@Transactional(readOnly = true)
+	public Cliente findByName(String nombre) {
+		return clienteDao.findByName(nombre);
+	}
 
 	@Override
 	@Transactional
