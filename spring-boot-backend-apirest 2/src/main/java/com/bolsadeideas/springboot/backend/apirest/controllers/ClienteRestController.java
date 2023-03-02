@@ -270,14 +270,14 @@ public class ClienteRestController {
 		return scr.encrypt(key, iv, cleartext);
 	}
 
-	@GetMapping("/clientes/desencriptar/{palabra}/{encriptado}")
-	public Object desencriptar(@PathVariable String palabra, @PathVariable String encriptado) throws Exception {
+	@GetMapping("/clientes/desencriptar/{encriptado}")
+	public Object desencriptar(@PathVariable String encriptado) throws Exception {
 
 		String key = "92AE31A79FEEB2A3"; // llave
 		String iv = "0123456789ABCDEF"; // vector de inicialización
 
 		//System.out.println("Texto desencriptado: " + scr.decrypt(key, iv, scr.encrypt(key, iv, palabra)));
 
-		return scr.decrypt(key, iv, scr.encrypt(key, iv, palabra));
+		return scr.decrypt(key, iv, encriptado);
 	}
 }
