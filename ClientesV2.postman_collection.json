@@ -80,7 +80,7 @@
 			"response": []
 		},
 		{
-			"name": "getClienteById",
+			"name": "getClienteByName",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -95,7 +95,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/api/clientes/1",
+					"raw": "localhost:8080/api/clientes/Linus",
 					"host": [
 						"localhost"
 					],
@@ -115,7 +115,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/api/clientes/pokemon/pikachu",
+					"raw": "localhost:8080/api/clientes/pokemon/charizard",
 					"host": [
 						"localhost"
 					],
@@ -136,7 +136,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/api/clientes/encriptar/estoesunejemplo",
+					"raw": "localhost:8080/api/clientes/encriptar/pruebaMifel",
 					"host": [
 						"localhost"
 					],
@@ -157,7 +157,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/api/clientes/desencriptar/estoesunejemplo/TTdXQnWrxCnWkSIrjrqd9A==",
+					"raw": "localhost:8080/api/clientes/desencriptar/zflrdvVOfhFAfLLzsltgNA==",
 					"host": [
 						"localhost"
 					],
